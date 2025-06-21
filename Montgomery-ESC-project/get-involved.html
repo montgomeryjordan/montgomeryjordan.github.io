@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Eighth Sense Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <!-- This header contains the main branding and navigation for the site.
+         It includes the organization logo, name, and navigation menu that is
+         consistent across all pages of the website. -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>Eighth Sense Connect</h1>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <!-- This navigation bar provides links to all main pages of the website.
+                     The "Get Involved" link is marked as active to show the current page location. -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <!-- This main section contains multiple ways for visitors to get involved
+         with Eighth Sense Connect through volunteering, contact forms, and participation. -->
+    <main>
+        <!-- Hero Section -->
+        <!-- The hero section encourages visitor engagement and outlines
+             the various ways people can contribute to the mental health community. -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Join Our Community</h2>
+                    <p>Every voice matters in our mission to transform mental health conversations. Whether you're seeking support, want to volunteer, or have a story to share, there's a place for you here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ways to Get Involved Section -->
+        <!-- This section outlines different opportunities for community involvement
+             and participation in mental health advocacy and support activities. -->
+        <section class="involvement-options">
+            <div class="container">
+                <h2>Ways to Make a Difference</h2>
+                <div class="options-grid">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Volunteer</h3>
+                        <p>Join our team of dedicated volunteers who help facilitate events, provide peer support, and spread mental health awareness in the community.</p>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Share Your Story</h3>
+                        <p>Your mental health journey can inspire and help others. Share your story through our blog, speaking opportunities, or support groups.</p>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Attend Events</h3>
+                        <p>Participate in our workshops, support groups, and community events. Your presence helps build a stronger, more connected community.</p>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Donate</h3>
+                        <p>Support our programs and initiatives through financial contributions. Every donation helps us reach more people in need.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Forms Section -->
+        <!-- This section provides multiple contact forms for different types
+         of engagement including volunteering, story sharing, and general inquiries. -->
+        <section class="contact-forms">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                
+                <!-- Volunteer Application Form -->
+                <!-- This form collects information from potential volunteers
+                     including their interests, availability, and background. -->
+                <div class="form-section">
+                    <h3>Volunteer Application</h3>
+                    <form id="volunteer-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="vol-first-name">First Name *</label>
+                                <input type="text" id="vol-first-name" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-last-name">Last Name *</label>
+                                <input type="text" id="vol-last-name" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-email">Email Address *</label>
+                            <input type="email" id="vol-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-phone">Phone Number</label>
+                            <input type="tel" id="vol-phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-interests">Areas of Interest *</label>
+                            <select id="vol-interests" name="interests" required>
+                                <option value="">Select an area</option>
+                                <option value="event-support">Event Support</option>
+                                <option value="peer-counseling">Peer Counseling</option>
+                                <option value="administrative">Administrative Tasks</option>
+                                <option value="social-media">Social Media & Marketing</option>
+                                <option value="fundraising">Fundraising</option>
+                                <option value="workshop-facilitation">Workshop Facilitation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-availability">Availability</label>
+                            <textarea id="vol-availability" name="availability" placeholder="Please describe your availability (days, times, frequency)"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vol-experience">Relevant Experience</label>
+                            <textarea id="vol-experience" name="experience" placeholder="Tell us about any relevant experience or why you're interested in volunteering with us"></textarea>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="vol-consent" name="consent" required>
+                            <label for="vol-consent">I consent to being contacted about volunteer opportunities and understand that a background check may be required for certain positions. *</label>
+                        </div>
+                        
+                        <button type="submit" class="cta-button primary">Submit Application</button>
+                    </form>
+                </div>
+
+                <!-- Story Submission Form -->
+                <!-- This form allows community members to share their mental health
+                     stories and experiences for potential inclusion in our resources. -->
+                <div class="form-section">
+                    <h3>Share Your Story</h3>
+                    <p class="form-description">Your story has the power to heal, inspire, and connect. Share your mental health journey to help others feel less alone.</p>
+                    <form id="story-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="story-name">Name (or "Anonymous")</label>
+                            <input type="text" id="story-name" name="name" placeholder="How would you like to be identified?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-email">Email Address *</label>
+                            <input type="email" id="story-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-title">Story Title</label>
+                            <input type="text" id="story-title" name="title" placeholder="Give your story a title">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-content">Your Story *</label>
+                            <textarea id="story-content" name="story" required placeholder="Share your mental health journey, recovery experience, or message of hope. What would you want others to know?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="story-type">Story Type</label>
+                            <select id="story-type" name="type">
+                                <option value="">Select a category</option>
+                                <option value="recovery">Recovery Journey</option>
+                                <option value="advocacy">Advocacy Experience</option>
+                                <option value="support">Finding Support</option>
+                                <option value="awareness">Mental Health Awareness</option>
+                                <option value="hope">Message of Hope</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="story-consent" name="consent" required>
+                            <label for="story-consent">I consent to my story being shared on the Eighth Sense Connect website and social media platforms for educational and inspirational purposes. *</label>
+                        </div>
+                        
+                        <button type="submit" class="cta-button primary">Submit Story</button>
+                    </form>
+                </div>
+
+                <!-- General Contact Form -->
+                <!-- This form handles general inquiries, questions, and requests
+                     for information about Eighth Sense Connect programs and services. -->
+                <div class="form-section">
+                    <h3>General Contact</h3>
+                    <p class="form-description">Have questions about our programs, need mental health resources, or want to learn more about our community? We're here to help.</p>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-first-name">First Name *</label>
+                                <input type="text" id="contact-first-name" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-last-name">Last Name *</label>
+                                <input type="text" id="contact-last-name" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="program-info">Program Information</option>
+                                <option value="event-registration">Event Registration</option>
+                                <option value="resource-request">Resource Request</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="media-inquiry">Media Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" required placeholder="Please provide details about your inquiry or how we can help you"></textarea>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="contact-newsletter" name="newsletter">
+                            <label for="contact-newsletter">I would like to receive updates about Eighth Sense Connect events and programs</label>
+                        </div>
+                        
+                        <button type="submit" class="cta-button primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <!-- This section provides direct contact information and office hours
+                     for those who prefer phone or in-person communication. -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@eighthsenseconnect.org</p>
+                                <p>volunteer@eighthsenseconnect.org</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>Main: (555) 123-4567</p>
+                                <p>Crisis Line: (555) 123-HELP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Office Location</h4>
+                                <p>123 Community Way</p>
+                                <p>Harrisburg, NC 28075</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <!-- This section features testimonials from volunteers and community members
+             to encourage others to get involved with Eighth Sense Connect. -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>What Our Community Says</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Volunteering with Eighth Sense Connect has been one of the most rewarding experiences of my life. Being able to support others on their mental health journey while continuing my own healing has been transformative."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Maria Rodriguez">
+                            <div class="author-info">
+                                <h4>Maria Rodriguez</h4>
+                                <p>Volunteer Peer Counselor</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The support I found at Eighth Sense Connect saved my life. Now I'm grateful to give back by helping facilitate support groups and sharing my story to help others know they're not alone."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="David Chen">
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <p>Support Group Facilitator</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"As a college student, finding a community that understood my struggles with anxiety was life-changing. Now I volunteer to help other young people access the mental health support they need."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=100&h=100&fit=crop&crop=face" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Youth Advocate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <!-- The footer contains validation links, copyright information, and
+         social media icons. This footer is consistent across all pages. -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eighth Sense Connect</h3>
+                    <p>Building stronger communities through mental health awareness and support.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eighth Sense Connect. All rights reserved.</p>
+                <div class="validation-links">
+                    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Handling -->
+    <!-- This script handles form validation, submission, and user feedback
+         for all contact forms on the Get Involved page. -->
+    <script>
+        // Form validation and submission handling
+        // This function validates required fields and provides user feedback
+        function handleFormSubmission(formId, successMessage) {
+            const form = document.getElementById(formId);
+            if (!form) return;
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Check if all required fields are filled
+                const requiredFields = form.querySelectorAll('[required]');
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.style.borderColor = '#FF6B6B';
+                    } else {
+                        field.style.borderColor = '#E9ECEF';
+                    }
+                });
+
+                // Validate email format
+                const emailFields = form.querySelectorAll('input[type="email"]');
+                emailFields.forEach(field => {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (field.value && !emailRegex.test(field.value)) {
+                        isValid = false;
+                        field.style.borderColor = '#FF6B6B';
+                    }
+                });
+
+                if (isValid) {
+                    // Display success message
+                    alert(successMessage);
+                    
+                    // Reset form
+                    form.reset();
+                    
+                    // Reset field borders
+                    const allFields = form.querySelectorAll('input, textarea, select');
+                    allFields.forEach(field => {
+                        field.style.borderColor = '#E9ECEF';
+                    });
+                } else {
+                    alert('Please fill in all required fields correctly.');
+                }
+            });
+        }
+
+        // Initialize form handlers
+        handleFormSubmission('volunteer-form', 'Thank you for your volunteer application! We will review your information and contact you within 5-7 business days.');
+        handleFormSubmission('story-form', 'Thank you for sharing your story! Our team will review it and may contact you about featuring it on our platform.');
+        handleFormSubmission('contact-form', 'Thank you for your message! We will respond to your inquiry within 24-48 hours.');
+
+        // Add real-time validation feedback
+        document.querySelectorAll('input[required], textarea[required], select[required]').forEach(field => {
+            field.addEventListener('blur', function() {
+                if (this.value.trim()) {
+                    this.style.borderColor = '#28a745';
+                } else {
+                    this.style.borderColor = '#FF6B6B';
+                }
+            });
+
+            field.addEventListener('focus', function() {
+                this.style.borderColor = '#6B73FF';
+            });
+        });
+
+        // Email validation on blur
+        document.querySelectorAll('input[type="email"]').forEach(field => {
+            field.addEventListener('blur', function() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (this.value && emailRegex.test(this.value)) {
+                    this.style.borderColor = '#28a745';
+                } else if (this.value) {
+                    this.style.borderColor = '#FF6B6B';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Eighth Sense Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <!-- This header contains the main branding and navigation for the site.
+         It includes the organization logo, name, and navigation menu that is
+         consistent across all pages of the website. -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>Eighth Sense Connect</h1>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <!-- This navigation bar provides links to all main pages of the website.
+                     The "Gallery" link is marked as active to show the current page location. -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <!-- This main section contains the image gallery with filtering options
+         and lightbox functionality for viewing enlarged images. -->
+    <main>
+        <!-- Gallery Introduction Section -->
+        <!-- This section introduces the gallery page and provides context
+             for the images and events showcased in the gallery. -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-intro">
+                    <h2>Our Community in Action</h2>
+                    <p>Explore moments from our mental health events, support circles, workshops, and community gatherings. These images capture the spirit of connection, healing, and hope that defines Eighth Sense Connect.</p>
+                </div>
+
+                <!-- Gallery Filter Buttons -->
+                <!-- These buttons allow users to filter gallery images by category
+                     such as events, workshops, support groups, and community activities. -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Images</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="workshops">Workshops</button>
+                    <button class="filter-btn" data-filter="support">Support Groups</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <!-- This grid displays thumbnail images that can be clicked to open
+                     in a lightbox modal for larger viewing and detailed descriptions. -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop" alt="Mental Health Awareness Workshop - Spring 2025">
+                        <div class="gallery-overlay">
+                            <h3>Mental Health Awareness Workshop</h3>
+                            <p>Spring 2025 - Community education event</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="support">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop" alt="Weekly Support Circle - Anxiety Support Group">
+                        <div class="gallery-overlay">
+                            <h3>Weekly Support Circle</h3>
+                            <p>Anxiety Support Group - Safe space for sharing</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="workshops">
+                        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=400&h=300&fit=crop" alt="Mindfulness and Meditation Workshop">
+                        <div class="gallery-overlay">
+                            <h3>Mindfulness Workshop</h3>
+                            <p>Learning meditation techniques for stress relief</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="community">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="Community Wellness Fair">
+                        <div class="gallery-overlay">
+                            <h3>Community Wellness Fair</h3>
+                            <p>Annual event promoting mental health resources</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400&h=300&fit=crop" alt="Mental Health First Aid Training">
+                        <div class="gallery-overlay">
+                            <h3>Mental Health First Aid</h3>
+                            <p>Training community members to recognize and respond</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="workshops">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Art Therapy Workshop">
+                        <div class="gallery-overlay">
+                            <h3>Art Therapy Workshop</h3>
+                            <p>Creative expression for emotional healing</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="support">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=300&fit=crop" alt="Peer Support Training">
+                        <div class="gallery-overlay">
+                            <h3>Peer Support Training</h3>
+                            <p>Empowering community members to help others</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="community">
+                        <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=300&fit=crop" alt="Youth Mental Health Panel">
+                        <div class="gallery-overlay">
+                            <h3>Youth Mental Health Panel</h3>
+                            <p>Young voices sharing their mental health journeys</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Mental Health Advocacy Rally">
+                        <div class="gallery-overlay">
+                            <h3>Advocacy Rally</h3>
+                            <p>Standing together for mental health policy change</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="workshops">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Stress Management Workshop">
+                        <div class="gallery-overlay">
+                            <h3>Stress Management Workshop</h3>
+                            <p>Learning practical coping strategies</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="support">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop" alt="Family Support Group">
+                        <div class="gallery-overlay">
+                            <h3>Family Support Group</h3>
+                            <p>Supporting families affected by mental health challenges</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="community">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=300&fit=crop" alt="Community Garden Project">
+                        <div class="gallery-overlay">
+                            <h3>Community Garden Project</h3>
+                            <p>Therapeutic gardening for mental wellness</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share Your Story Section -->
+                <!-- This section encourages visitors to contribute their own images
+                     and stories to the gallery and community. -->
+                <div class="share-story-section">
+                    <div class="container">
+                        <h2>Share Your Story</h2>
+                        <p>Have a photo or story from one of our events? We'd love to feature it in our gallery and celebrate your journey with our community.</p>
+                        <a href="get-involved.html" class="cta-button primary">Submit Your Photo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <!-- This modal displays enlarged images when gallery thumbnails are clicked.
+         It includes navigation arrows and detailed image descriptions. -->
+    <div id="lightbox" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption"></div>
+            <div class="lightbox-nav">
+                <button id="prev-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <!-- The footer contains validation links, copyright information, and
+         social media icons. This footer is consistent across all pages. -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eighth Sense Connect</h3>
+                    <p>Building stronger communities through mental health awareness and support.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eighth Sense Connect. All rights reserved.</p>
+                <div class="validation-links">
+                    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Gallery Functionality -->
+    <!-- This script handles the lightbox modal, image filtering, and
+         interactive gallery features for enhanced user experience. -->
+    <script>
+        // Gallery filtering functionality
+        // This function filters gallery images based on category selection
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        // This function creates a modal lightbox for viewing enlarged images
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const closeBtn = document.querySelector('.close');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        
+        let currentImageIndex = 0;
+        let visibleImages = [];
+
+        // Function to update visible images array based on current filter
+        function updateVisibleImages() {
+            visibleImages = Array.from(galleryItems).filter(item => 
+                item.style.display !== 'none'
+            );
+        }
+
+        // Open lightbox when gallery item is clicked
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                updateVisibleImages();
+                currentImageIndex = visibleImages.indexOf(item);
+                showLightboxImage();
+                lightbox.style.display = 'block';
+            });
+        });
+
+        // Function to display current image in lightbox
+        function showLightboxImage() {
+            if (visibleImages.length > 0) {
+                const currentItem = visibleImages[currentImageIndex];
+                const img = currentItem.querySelector('img');
+                const overlay = currentItem.querySelector('.gallery-overlay');
+                
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxCaption.innerHTML = overlay.innerHTML;
+            }
+        }
+
+        // Close lightbox functionality
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+        // Previous image navigation
+        prevBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + visibleImages.length) % visibleImages.length;
+            showLightboxImage();
+        });
+
+        // Next image navigation
+        nextBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % visibleImages.length;
+            showLightboxImage();
+        });
+
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.style.display === 'block') {
+                if (e.key === 'Escape') {
+                    lightbox.style.display = 'none';
+                } else if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

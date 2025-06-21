@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Eighth Sense Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <!-- This header contains the main branding and navigation for the site.
+         It includes the organization logo, name, and navigation menu that is
+         consistent across all pages of the website. -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>Eighth Sense Connect</h1>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <!-- This navigation bar provides links to all main pages of the website.
+                     The "Events" link is marked as active to show the current page location. -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html" class="active">Events</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <!-- This main section contains upcoming and past events with filtering
+         and detailed information about mental health programs and activities. -->
+    <main>
+        <!-- Events Introduction Section -->
+        <!-- This section introduces the events page and explains the types
+             of mental health events and programs offered by Eighth Sense Connect. -->
+        <section class="events-section">
+            <div class="container">
+                <div class="events-intro">
+                    <h2>Upcoming Events & Programs</h2>
+                    <p>Join us for transformative mental health events, workshops, support groups, and community gatherings. Together, we're building a stronger, more supportive community.</p>
+                </div>
+
+                <!-- Event Filter Controls -->
+                <!-- These controls allow users to filter events by type, date,
+                     and other criteria to find relevant programs easily. -->
+                <div class="filter-controls">
+                    <label for="event-filter">Filter by Type:</label>
+                    <select id="event-filter">
+                        <option value="all">All Events</option>
+                        <option value="workshop">Workshops</option>
+                        <option value="support">Support Groups</option>
+                        <option value="community">Community Events</option>
+                        <option value="training">Training</option>
+                        <option value="fundraiser">Fundraisers</option>
+                    </select>
+                </div>
+
+                <!-- Upcoming Events Grid -->
+                <!-- This section displays upcoming events in an organized card layout
+                     with key information and registration options. -->
+                <div class="events-grid">
+                    <div class="event-card" data-type="workshop">
+                        <div class="event-header">
+                            <div class="event-info">
+                                <h3>Mental Health First Aid Certification</h3>
+                                <div class="event-type">Workshop</div>
+                            </div>
+                            <div class="event-date">June 28, 2025</div>
+                        </div>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 9:00 AM - 4:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Community Center, Room 201</p>
+                            <p><i class="fas fa-users"></i> 25 spots available</p>
+                        </div>
+                        <p class="event-description">Learn how to recognize and respond to mental health crises. This nationally recognized certification course provides essential skills for supporting others in mental health emergencies.</p>
+                        <a href="get-involved.html" class="cta-button primary">Register Now</a>
+                    </div>
+
+                    <div class="event-card" data-type="support">
+                        <div class="event-header">
+                            <div class="event-info">
+                                <h3>Anxiety Support Circle</h3>
+                                <div class="event-type">Support Group</div>
+                            </div>
+                            <div class="event-date">Every Tuesday</div>
+                        </div>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 6:30 PM - 8:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Wellness Center, Building A</p>
+                            <p><i class="fas fa-users"></i> Open group</p>
+                        </div>
+                        <p class="event-description">A safe, confidential space for individuals experiencing anxiety to share experiences, coping strategies, and mutual support. Facilitated by licensed counselors.</p>
+                        <a href="get-involved.html" class="cta-button primary">Join Us</a>
+                    </div>
+
+                    <div class="event-card" data-type="workshop">
+                        <div class="event-header">
+                            <div class="event-info">
+                                <h3>Mindfulness & Stress Reduction</h3>
+                                <div class="event-type">Workshop</div>
+                            </div>
+                            <div class="event-date">July 5, 2025</div>
+                        </div>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 2:00 PM - 5:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Meditation Garden, Outdoor Pavilion</p>
+                            <p><i class="fas fa-users"></i> 30 spots available</p>
+                        </div>
+                        <p class="event-description">Discover practical mindfulness techniques for managing stress and anxiety. Includes guided meditation, breathing exercises, and take-home resources.</p>
+                        <a href="get-involved.html" class="cta-button primary">Register Now</a>
+                    </div>
+
+                    <div class="event-card" data-type="community">
+                        <div class="event-header">
+                            <div class="event-info">
+                                <h3>Community Mental Health Fair</h3>
+                                <div class="event-type">Community Event</div>
+                            </div>
+                            <div class="event-date">July 12, 2025</div>
+                        </div>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Central Park Amphitheater</p>
+                            <p><i class="fas fa-users"></i> Free admission</p>
+                        </div>
+                        <p class="event-description">Annual community celebration featuring mental health resources, wellness activities, food trucks, live music, and inspiring speakers sharing their recovery stories.</p>
+                        <a href="get-involved.html" class="cta-button primary">Learn More</a>
+                    </div>
+
+                    <div class="event-card" data-type="training">
+                        <div class="event-header">
+                            <div class="event-info">
+                                <h3>Peer Support Specialist Training</h3>
+                                <div class="event-type">Training</div>
+                            </div>
+                            <div class="event-date">July 18-20, 2025</div>
+                        </div>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 3-Day Intensive</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Training Center, Suite 300</p>
+                            <p><i class="fas fa-users"></i> 15 spots available</p>
+                        </div>
+                        <p class="event-description">Comprehensive training program for individuals with lived mental health experience who want to support others on their recovery journey. Certification provided.</p>
+                        <a href="get-involved.html" class="cta-button primary">Apply Now</a>
+                    </div>
+
+                    <div class="event-card" data-type="support">
+                        <div class="event-header">
+                            <div class="event-info">
+                                <h3>Family Support Network</h3>
+                                <div class="event-type">Support Group</div>
+                            </div>
+                            <div class="event-date">Every Saturday</div>
+                        </div>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 10:00 AM - 11:30 AM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Family Resource Center</p>
+                            <p><i class="fas fa-users"></i> Open group</p>
+                        </div>
+                        <p class="event-description">Support group for family members and friends of individuals living with mental health challenges. Learn coping strategies and connect with others who understand.</p>
+                        <a href="get-involved.html" class="cta-button primary">Join Us</a>
+                    </div>
+
+                    <div class="event-card" data-type="fundraiser">
+                        <div class="event-header">
+                            <div class="event-info">
+                                <h3>Hope & Healing 5K Run/Walk</h3>
+                                <div class="event-type">Fundraiser</div>
+                            </div>
+                            <div class="event-date">August 2, 2025</div>
+                        </div>
+                        <div class="event-details">
+                            <p><i class="fas fa-clock"></i> 8:00 AM - 12:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Riverside Trail Starting Point</p>
+                            <p><i class="fas fa-users"></i> Registration open</p>
+                        </div>
+                        <p class="event-description">Annual fundraising event to support our mental health programs. Includes 5K run/walk, wellness vendors, breakfast, and mental health awareness activities for all ages.</p>
+                        <a href="get-involved.html" class="cta-button primary">Register & Donate</a>
+                    </div>
+                </div>
+
+                <!-- Past Events Section -->
+                <!-- This section showcases successful past events to demonstrate
+                     the impact and ongoing commitment of Eighth Sense Connect. -->
+                <div class="past-events-section">
+                    <h2>Recent Past Events</h2>
+                    <div class="events-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Event Name</th>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Attendance</th>
+                                    <th>Impact</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mental Health Awareness Week</td>
+                                    <td>May 6-12, 2025</td>
+                                    <td>Community Event</td>
+                                    <td>350+ participants</td>
+                                    <td>15 new support group members</td>
+                                </tr>
+                                <tr>
+                                    <td>Art Therapy Workshop Series</td>
+                                    <td>April 15-29, 2025</td>
+                                    <td>Workshop</td>
+                                    <td>45 participants</td>
+                                    <td>8-week follow-up program launched</td>
+                                </tr>
+                                <tr>
+                                    <td>Youth Mental Health Summit</td>
+                                    <td>March 22, 2025</td>
+                                    <td>Community Event</td>
+                                    <td>200+ youth & families</td>
+                                    <td>3 new youth ambassadors recruited</td>
+                                </tr>
+                                <tr>
+                                    <td>Crisis Intervention Training</td>
+                                    <td>February 28, 2025</td>
+                                    <td>Training</td>
+                                    <td>25 community members</td>
+                                    <td>25 newly certified responders</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Event Newsletter Signup -->
+                <!-- This section allows visitors to subscribe to event notifications
+                     and stay informed about upcoming mental health programs. -->
+                <div class="newsletter-section">
+                    <div class="newsletter-content">
+                        <h2>Stay Connected</h2>
+                        <p>Get notified about upcoming events, workshops, and special programs. Join our mailing list to stay engaged with the Eighth Sense Connect community.</p>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter your email address" required>
+                                <button type="submit" class="cta-button primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <!-- The footer contains validation links, copyright information, and
+         social media icons. This footer is consistent across all pages. -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eighth Sense Connect</h3>
+                    <p>Building stronger communities through mental health awareness and support.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="get-involved.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eighth Sense Connect. All rights reserved.</p>
+                <div class="validation-links">
+                    <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Events Functionality -->
+    <!-- This script handles event filtering and newsletter form submission
+         for enhanced user interaction and engagement. -->
+    <script>
+        // Event filtering functionality
+        // This function filters events based on the selected type
+        document.getElementById('event-filter').addEventListener('change', function() {
+            const filterValue = this.value;
+            const eventCards = document.querySelectorAll('.event-card');
+
+            eventCards.forEach(card => {
+                if (filterValue === 'all' || card.getAttribute('data-type') === filterValue) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Newsletter form submission
+        // This function handles the newsletter subscription form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            // Display success message (in a real application, this would submit to a server)
+            alert('Thank you for subscribing! You will receive updates about our upcoming events and programs.');
+            
+            // Clear the form
+            this.reset();
+        });
+
+        // Add smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

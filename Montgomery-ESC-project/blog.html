@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Eighth Sense Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <!-- This header contains the main branding and navigation for the site.
+         It includes the organization logo, name, and navigation menu that is
+         consistent across all pages of the website. -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>Eighth Sense Connect</h1>
+                </div>
+                
+                <!-- Navigation Bar -->
+                <!-- This navigation bar provides links to all main pages of the website.
+                     The "Blog" link is marked as active to show the current page location. -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html" class="active">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <!-- This main section contains the blog posts, stories, and mental health
+         reflections from community members and mental health advocates. -->
+    <main>
+        <!-- Hero Section -->
+        <!-- The hero section introduces the blog and its purpose of sharing
+             mental health stories, insights, and community experiences. -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Stories of Hope & Healing</h2>
+                    <p>Real stories from real people about mental health journeys, recovery, advocacy, and finding hope in community.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post Section -->
+        <!-- This section highlights the most recent or important blog post
+             to give it prominence and encourage reader engagement. -->
+        <section class="featured-post-section">
+            <div class="container">
+                <h2>Featured Story</h2>
+                <article class="featured-post">
+                    <div class="featured-post-image">
+                        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=800&h=400&fit=crop" alt="Finding Light in the Darkness">
+                    </div>
+                    <div class="featured-post-content">
+                        <div class="post-meta">
+                            <span class="post-category">Recovery Journey</span>
+                            <span class="post-date">June 18, 2025</span>
+                            <span class="post-author">By Sarah Chen</span>
+                        </div>
+                        <h3>Finding Light in the Darkness: My Journey from Despair to Hope</h3>
+                        <p>Three years ago, I couldn't imagine a future where I felt anything other than overwhelming sadness. Depression had consumed every aspect of my life, making even the simplest daily tasks feel impossible. Today, I'm sharing my story not because I have all the answers, but because I want others to know that healing is possible...</p>
+                        <p>The turning point came when I finally reached out for help. I remember sitting in my therapist's office for the first time, terrified but desperate for change. She told me something that still resonates today: "You don't have to carry this alone." Those words became my lifeline...</p>
+                        <a href="#" class="read-more-btn">Continue Reading</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Categories Filter -->
+        <!-- This section allows readers to filter blog posts by category
+             to find content most relevant to their interests and experiences. -->
+        <section class="blog-filter-section">
+            <div class="container">
+                <h2>Explore Our Stories</h2>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Stories</button>
+                    <button class="filter-btn" data-category="recovery">Recovery Journeys</button>
+                    <button class="filter-btn" data-category="advocacy">Mental Health Advocacy</button>
+                    <button class="filter-btn" data-category="wellness">Wellness Tips</button>
+                    <button class="filter-btn" data-category="youth">Youth Voices</button>
+                    <button class="filter-btn" data-category="family">Family Support</button>
+                    <button class="filter-btn" data-category="hope">Messages of Hope</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <!-- This section displays all blog posts in a grid layout with
+             filtering capabilities and detailed post previews. -->
+        <section class="blog-posts-section">
+            <div class="container">
+                <div class="blog-posts-grid">
+                    <article class="blog-post-card" data-category="advocacy">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=250&fit=crop" alt="Breaking Mental Health Stigma">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Mental Health Advocacy</span>
+                                <span class="post-date">June 15, 2025</span>
+                            </div>
+                            <h3>Breaking the Stigma: Why We Need to Talk About Mental Health</h3>
+                            <p>Mental health stigma continues to prevent people from seeking the help they need. As someone who has experienced this firsthand, I believe it's time to change the conversation...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Marcus Johnson</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="wellness">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop" alt="5 Daily Habits for Better Mental Health">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Wellness Tips</span>
+                                <span class="post-date">June 12, 2025</span>
+                            </div>
+                            <h3>5 Daily Habits That Transformed My Mental Health</h3>
+                            <p>Small, consistent actions can create profound changes in our mental well-being. Here are five simple habits that made a significant difference in my daily life...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Dr. Elena Rodriguez</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="family">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop" alt="Supporting Your Teen Through Mental Health Challenges">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Family Support</span>
+                                <span class="post-date">June 8, 2025</span>
+                            </div>
+                            <h3>How to Support Your Teen Through Mental Health Challenges</h3>
+                            <p>When your teenager is struggling with mental health issues, it can feel overwhelming as a parent. Here's what I learned during my daughter's journey with anxiety...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Jennifer Martinez</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="youth">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400&h=250&fit=crop" alt="College Student Mental Health">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Youth Voices</span>
+                                <span class="post-date">June 5, 2025</span>
+                            </div>
+                            <h3>Navigating College with Anxiety: A Student's Perspective</h3>
+                            <p>Starting college with anxiety felt like climbing a mountain with a backpack full of rocks. Here's how I learned to lighten the load and find my community...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Alex Thompson</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="recovery">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="From Isolation to Connection">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Recovery Journey</span>
+                                <span class="post-date">June 1, 2025</span>
+                            </div>
+                            <h3>From Isolation to Connection: Building My Support Network</h3>
+                            <p>After years of struggling alone with depression, I realized that isolation was making everything worse. Here's how I slowly built a support network that saved my life...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By David Chen</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="hope">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=250&fit=crop" alt="Finding Purpose After Crisis">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Messages of Hope</span>
+                                <span class="post-date">May 28, 2025</span>
+                            </div>
+                            <h3>Finding Purpose After Crisis: How Helping Others Healed Me</h3>
+                            <p>After my suicide attempt, I never thought I'd find meaning again. Today, I volunteer as a peer counselor, and helping others has become my greatest source of healing...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Maria Rodriguez</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="wellness">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=400&h=250&fit=crop" alt="Mindfulness for Busy Lives">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Wellness Tips</span>
+                                <span class="post-date">May 25, 2025</span>
+                            </div>
+                            <h3>Mindfulness for Busy Lives: 5-Minute Mental Health Breaks</h3>
+                            <p>You don't need hours of meditation to benefit from mindfulness. These quick techniques can help you find calm in the busiest days...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Wellness Team</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="advocacy">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop" alt="Mental Health in the Workplace">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Mental Health Advocacy</span>
+                                <span class="post-date">May 22, 2025</span>
+                            </div>
+                            <h3>Mental Health in the Workplace: Know Your Rights</h3>
+                            <p>Understanding your rights and available accommodations can make the difference between thriving and surviving at work. Here's what you need to know...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Legal Advocacy Team</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-post-card" data-category="family">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=250&fit=crop" alt="Supporting a Partner with Mental Health">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Family Support</span>
+                                <span class="post-date">May 18, 2025</span>
+                            </div>
+                            <h3>Loving Someone with Mental Illness: A Partner's Guide</h3>
+                            <p>When mental illness affects your relationship, love alone isn't always enough. Here's what I learned about supporting my partner while caring for myself...</p>
+                            <div class="post-footer">
+                                <span class="post-author">By Anonymous Contributor</span>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <!-- This button allows users to load additional blog posts
+                     without overwhelming the initial page load. -->
+                <div class="load-more-section">
+                    <button id="load-more-btn" class="cta-button secondary">Load More Stories</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Your Story Section -->
+        <!-- This section encourages community members to contribute their own
+             mental health stories and experiences to the blog. -->
+        <section class="submit-story-section">
+            <div class="container">
+                <div class="submit-story-content">
+                    <h2>Share Your Story</h2>
+                    <p>Your mental health journey matters. By sharing your story, you can help others feel less alone and inspire hope in those who need it most.</p>
+                    <div class="story-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Help others feel less alone</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Share valuable insights</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <span>Contribute to healing</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-microphone"></i>
+                            <span>Amplify important voices</span>
+                        </div>
+                    </div>
+                    <a href="get-involved.html" class="cta-button primary">Submit Your Story</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<!-- The footer contains validation links, copyright information, and
+     social media icons. This footer is consistent across all pages. -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Eighth Sense Connect</h3>
+                <p>Building stronger communities through mental health awareness and support.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="get-involved.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Eighth Sense Connect. All rights reserved.</p>
+            <div class="validation-links">
+                <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> |
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+            </div>
+        </div>
+    </div>
+	</footer>
+
+    <!-- JavaScript for Blog Functionality -->
+    <!-- This script handles blog post filtering, load more functionality,
+         and interactive features for enhanced user experience. -->
+    <script>
+        // Blog post filtering functionality
+        // This function filters blog posts based on selected category
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const blogPosts = document.querySelectorAll('.blog-post-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-category');
+                
+                blogPosts.forEach(post => {
+                    if (filterValue === 'all' || post.getAttribute('data-category') === filterValue) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Load more functionality
+        // This function simulates loading additional blog posts
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            // In a real application, this would load more posts from a server
+            alert('Loading more stories...\n\nIn a live website, this would load additional blog posts from the database.');
+        });
+
+        // Smooth scrolling for read more buttons
+        document.querySelectorAll('.read-more-btn, .read-more').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                // In a real application, this would navigate to the full blog post
+                alert('This would open the full blog post in a real website.');
+            });
+        });
+
+        // Add hover effects to blog post cards
+        blogPosts.forEach(post => {
+            post.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.15)';
+            });
+            
+            post.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
+</body>
+</html>

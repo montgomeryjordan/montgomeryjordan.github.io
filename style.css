@@ -106,6 +106,100 @@ ul { list-style: none; }
 
 .nav-links a:hover { color: var(--text); }
 
+/* ─── TOOLBAR ─────────────────────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 5px 8px;
+  flex: 1;
+  max-width: 460px;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.toolbar-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 44px;
+  height: 38px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  transition: color var(--transition), background var(--transition), transform 0.15s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.toolbar-item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.toolbar-item:hover {
+  color: var(--text);
+  background: var(--bg-input);
+}
+
+.toolbar-item:hover svg {
+  transform: translateY(-1px);
+}
+
+.toolbar-item.active {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* Tooltip */
+.toolbar-item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-size: 0.7rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 4px 9px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.toolbar-item:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.toolbar-label {
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 22px;
+  background: var(--border);
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
 /* ─── BUTTONS ─────────────────────────────────────────────────────── */
 .btn {
   display: inline-flex;
@@ -458,4 +552,22 @@ ul { list-style: none; }
   .form-row { grid-template-columns: 1fr; }
 
   .nav-links { display: none; }
+
+  .toolbar {
+    max-width: unset;
+    gap: 0;
+    padding: 4px 6px;
+  }
+
+  .toolbar-item {
+    width: 36px;
+    height: 34px;
+  }
+
+  .toolbar-item svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .toolbar-label { display: none; }
 }

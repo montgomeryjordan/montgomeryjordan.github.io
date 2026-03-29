@@ -60,18 +60,22 @@ function handleSubmit(e) {
   }, 1200);
 }
 
-// ─── SMOOTH ACTIVE NAV ─────────────────────────────────────────────
+// ─── ACTIVE STATE: NAV + TOOLBAR ───────────────────────────────────
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
+const toolbarItems = document.querySelectorAll('.toolbar-item[href^="#"]');
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
+      const id = '#' + entry.target.id;
+
       navLinks.forEach(link => {
-        link.classList.toggle(
-          'active',
-          link.getAttribute('href') === '#' + entry.target.id
-        );
+        link.classList.toggle('active', link.getAttribute('href') === id);
+      });
+
+      toolbarItems.forEach(item => {
+        item.classList.toggle('active', item.getAttribute('href') === id);
       });
     }
   });

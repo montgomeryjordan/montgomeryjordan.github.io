@@ -3,73 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Montgomery Jordan — Developer & Designer</title>
+  <title>Montgomery Jordan — Developer &amp; Designer</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Montgomery Jordan — Developer &amp; Designer" />
+  <meta property="og:description" content="Full-stack developer &amp; designer. Building clean, purposeful digital products." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://montgomeryjordan.github.io" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="twitter:title"      content="Montgomery Jordan — Developer &amp; Designer" />
+  <meta name="twitter:description" content="Full-stack developer &amp; designer. Building clean, purposeful digital products." />
+  <meta name="description"        content="Full-stack developer &amp; designer based in the US. Building clean, purposeful digital products." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">&#10003;</span>
+    <span class="toast-msg" id="toastMsg">Message sent!</span>
+  </div>
 
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
       <div class="nav-logo">MJ</div>
 
-      <!-- Icon Toolbar -->
       <div class="toolbar" role="toolbar" aria-label="Site navigation">
-
-        <a href="#about" class="toolbar-item" data-tooltip="Home">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-            <polyline points="9 22 9 12 15 12 15 22"/>
-          </svg>
+        <a href="#about"    class="toolbar-item" data-tooltip="Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           <span class="toolbar-label">Home</span>
         </a>
-
-        <a href="#about" class="toolbar-item" data-tooltip="About">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-            <circle cx="12" cy="7" r="4"/>
-          </svg>
+        <a href="#about"    class="toolbar-item" data-tooltip="About">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           <span class="toolbar-label">About</span>
         </a>
-
         <a href="#projects" class="toolbar-item" data-tooltip="Projects">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2"/>
-            <path d="M8 21h8M12 17v4"/>
-          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           <span class="toolbar-label">Projects</span>
         </a>
-
-        <a href="#contact" class="toolbar-item" data-tooltip="Contact">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-          </svg>
+        <a href="#skills"   class="toolbar-item" data-tooltip="Skills">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span class="toolbar-label">Skills</span>
+        </a>
+        <a href="#experience" class="toolbar-item" data-tooltip="Experience">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          <span class="toolbar-label">Experience</span>
+        </a>
+        <a href="#contact"  class="toolbar-item" data-tooltip="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           <span class="toolbar-label">Contact</span>
         </a>
-
         <div class="toolbar-divider"></div>
-
         <a href="https://github.com/montgomeryjordan" target="_blank" rel="noopener" class="toolbar-item" data-tooltip="GitHub">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           <span class="toolbar-label">GitHub</span>
         </a>
-
         <a href="https://linkedin.com" target="_blank" rel="noopener" class="toolbar-item" data-tooltip="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           <span class="toolbar-label">LinkedIn</span>
         </a>
-
       </div>
-      <!-- End Toolbar -->
 
       <a href="#contact" class="btn btn-sm">Hire Me</a>
     </div>
@@ -79,130 +83,232 @@
 
     <!-- HERO -->
     <section class="hero" id="about">
-      <div class="container hero-grid">
+      <!-- Mesh blobs -->
+      <div class="mesh-blob blob-1"></div>
+      <div class="mesh-blob blob-2"></div>
+      <div class="mesh-blob blob-3"></div>
 
+      <div class="container hero-grid">
         <div class="hero-text">
-          <span class="badge">&#x25CF; Available for Work</span>
-          <h1 class="hero-name">I'm Montgomery Jordan</h1>
-          <p class="hero-bio">
+          <span class="badge hero-reveal" style="--d:0ms">&#x25CF; Available for Work</span>
+          <h1 class="hero-name hero-reveal" style="--d:80ms">
+            I'm Montgomery Jordan
+          </h1>
+          <p class="hero-typed hero-reveal" style="--d:160ms">
+            <span id="typed"></span><span class="cursor-blink">|</span>
+          </p>
+          <p class="hero-bio hero-reveal" style="--d:220ms">
             Full-stack developer &amp; designer based in the US.
             I build clean, purposeful digital products — from interactive
             web apps to polished UI systems.
           </p>
-          <div class="hero-actions">
+          <div class="hero-actions hero-reveal" style="--d:300ms">
             <a href="#contact" class="btn">&#x2295; Hire Me</a>
             <button class="btn btn-ghost" onclick="copyEmail()">
-              <span class="copy-icon">&#x2398;</span> Copy Email
+              <span>&#x2398;</span> Copy Email
             </button>
           </div>
         </div>
 
-        <div class="hero-avatar-wrap">
+        <div class="hero-avatar-wrap hero-reveal" style="--d:160ms">
           <div class="avatar-ring">
             <div class="avatar-placeholder">
               <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="60" cy="45" r="28" fill="currentColor" opacity="0.25"/>
-                <ellipse cx="60" cy="105" rx="42" ry="30" fill="currentColor" opacity="0.2"/>
-                <circle cx="60" cy="45" r="22" fill="currentColor" opacity="0.5"/>
-                <text x="60" y="53" text-anchor="middle" font-size="22" font-weight="700" fill="currentColor" font-family="Inter, sans-serif">MJ</text>
+                <defs>
+                  <radialGradient id="ag" cx="50%" cy="40%" r="60%">
+                    <stop offset="0%"   stop-color="var(--accent)" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#ec4899"        stop-opacity="0.4"/>
+                  </radialGradient>
+                </defs>
+                <circle cx="60" cy="42" r="28" fill="url(#ag)"/>
+                <ellipse cx="60" cy="108" rx="44" ry="28" fill="url(#ag)" opacity="0.5"/>
+                <text x="60" y="51" text-anchor="middle" font-size="24" font-weight="800"
+                      fill="#fff" font-family="Inter, sans-serif" opacity="0.95">MJ</text>
               </svg>
             </div>
           </div>
+          <div class="avatar-status">Open to work</div>
         </div>
-
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section class="section" id="projects">
+    <section class="section reveal-section" id="projects">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal-child">
           <span class="section-label">&#x25CF; Projects</span>
           <a href="#" class="view-all">View All &#x2192;</a>
         </div>
-        <h2 class="section-title">Selected Work</h2>
-        <p class="section-sub">A few things I've built and shipped recently.</p>
+        <h2 class="section-title reveal-child">Selected Work</h2>
+        <p class="section-sub reveal-child">A few things I've built and shipped recently.</p>
 
-        <div class="projects-grid">
+        <!-- Skeleton placeholders (hidden once JS runs) -->
+        <div class="projects-skeleton" id="projectsSkeleton">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
 
-          <a class="project-card" href="#" tabindex="0">
-            <div class="project-icon" style="background: linear-gradient(135deg, #6C63FF, #9B59B6);">
-              <span>&#x1F4BB;</span>
-            </div>
-            <div class="project-info">
-              <h3>DevDash</h3>
-              <p>Developer productivity dashboard. React, Node.js, REST APIs.</p>
-            </div>
+        <div class="projects-grid" id="projectsGrid" style="display:none">
+          <a class="project-card tilt-card" href="#" tabindex="0">
+            <div class="project-icon" style="background:linear-gradient(135deg,#6C63FF,#9B59B6)"><span>&#x1F4BB;</span></div>
+            <div class="project-info"><h3>DevDash</h3><p>Developer productivity dashboard. React, Node.js, REST APIs.</p></div>
             <span class="project-arrow">&#x203A;</span>
           </a>
-
-          <a class="project-card" href="#" tabindex="0">
-            <div class="project-icon" style="background: linear-gradient(135deg, #F97316, #EF4444);">
-              <span>&#x1F4E6;</span>
-            </div>
-            <div class="project-info">
-              <h3>PackageTrackr</h3>
-              <p>Real-time shipment tracking UI. TypeScript, Next.js, Tailwind.</p>
-            </div>
+          <a class="project-card tilt-card" href="#" tabindex="0">
+            <div class="project-icon" style="background:linear-gradient(135deg,#F97316,#EF4444)"><span>&#x1F4E6;</span></div>
+            <div class="project-info"><h3>PackageTrackr</h3><p>Real-time shipment tracking UI. TypeScript, Next.js, Tailwind.</p></div>
             <span class="project-arrow">&#x203A;</span>
           </a>
-
-          <a class="project-card" href="#" tabindex="0">
-            <div class="project-icon" style="background: linear-gradient(135deg, #10B981, #3B82F6);">
-              <span>&#x1F30D;</span>
-            </div>
-            <div class="project-info">
-              <h3>GreenMap</h3>
-              <p>Environmental data visualisation. D3.js, Python, PostGIS.</p>
-            </div>
+          <a class="project-card tilt-card" href="#" tabindex="0">
+            <div class="project-icon" style="background:linear-gradient(135deg,#10B981,#3B82F6)"><span>&#x1F30D;</span></div>
+            <div class="project-info"><h3>GreenMap</h3><p>Environmental data visualisation. D3.js, Python, PostGIS.</p></div>
             <span class="project-arrow">&#x203A;</span>
           </a>
-
-          <a class="project-card" href="#" tabindex="0">
-            <div class="project-icon" style="background: linear-gradient(135deg, #F59E0B, #EC4899);">
-              <span>&#x1F3A8;</span>
-            </div>
-            <div class="project-info">
-              <h3>Palette Studio</h3>
-              <p>In-browser colour tool for designers. Vanilla JS, Web Workers.</p>
-            </div>
+          <a class="project-card tilt-card" href="#" tabindex="0">
+            <div class="project-icon" style="background:linear-gradient(135deg,#F59E0B,#EC4899)"><span>&#x1F3A8;</span></div>
+            <div class="project-info"><h3>Palette Studio</h3><p>In-browser colour tool for designers. Vanilla JS, Web Workers.</p></div>
             <span class="project-arrow">&#x203A;</span>
           </a>
-
-          <a class="project-card" href="#" tabindex="0">
-            <div class="project-icon" style="background: linear-gradient(135deg, #06B6D4, #6366F1);">
-              <span>&#x1F916;</span>
-            </div>
-            <div class="project-info">
-              <h3>ChatKit</h3>
-              <p>Embeddable AI chat widget. WebSockets, OpenAI API, Vue 3.</p>
-            </div>
+          <a class="project-card tilt-card" href="#" tabindex="0">
+            <div class="project-icon" style="background:linear-gradient(135deg,#06B6D4,#6366F1)"><span>&#x1F916;</span></div>
+            <div class="project-info"><h3>ChatKit</h3><p>Embeddable AI chat widget. WebSockets, OpenAI API, Vue 3.</p></div>
             <span class="project-arrow">&#x203A;</span>
           </a>
-
-          <a class="project-card" href="#" tabindex="0">
-            <div class="project-icon" style="background: linear-gradient(135deg, #8B5CF6, #D946EF);">
-              <span>&#x1F4CA;</span>
-            </div>
-            <div class="project-info">
-              <h3>Statsboard</h3>
-              <p>Analytics platform for indie makers. SvelteKit, SQLite, Vite.</p>
-            </div>
+          <a class="project-card tilt-card" href="#" tabindex="0">
+            <div class="project-icon" style="background:linear-gradient(135deg,#8B5CF6,#D946EF)"><span>&#x1F4CA;</span></div>
+            <div class="project-info"><h3>Statsboard</h3><p>Analytics platform for indie makers. SvelteKit, SQLite, Vite.</p></div>
             <span class="project-arrow">&#x203A;</span>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-child">
+          <span class="section-label">&#x25CF; Skills</span>
+        </div>
+        <h2 class="section-title reveal-child">Tech Stack</h2>
+        <p class="section-sub reveal-child">Tools and technologies I work with daily.</p>
+
+        <div class="skills-group reveal-child">
+          <p class="skills-group-label">Frontend</p>
+          <div class="skills-pills">
+            <span class="skill-pill shimmer-pill">React</span>
+            <span class="skill-pill shimmer-pill">TypeScript</span>
+            <span class="skill-pill shimmer-pill">Next.js</span>
+            <span class="skill-pill shimmer-pill">Vue 3</span>
+            <span class="skill-pill shimmer-pill">Svelte</span>
+            <span class="skill-pill shimmer-pill">Tailwind CSS</span>
+            <span class="skill-pill shimmer-pill">Framer Motion</span>
+          </div>
+        </div>
+
+        <div class="skills-group reveal-child">
+          <p class="skills-group-label">Backend</p>
+          <div class="skills-pills">
+            <span class="skill-pill shimmer-pill">Node.js</span>
+            <span class="skill-pill shimmer-pill">Python</span>
+            <span class="skill-pill shimmer-pill">PostgreSQL</span>
+            <span class="skill-pill shimmer-pill">SQLite</span>
+            <span class="skill-pill shimmer-pill">REST APIs</span>
+            <span class="skill-pill shimmer-pill">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="skills-group reveal-child">
+          <p class="skills-group-label">Design &amp; Tools</p>
+          <div class="skills-pills">
+            <span class="skill-pill shimmer-pill">Figma</span>
+            <span class="skill-pill shimmer-pill">D3.js</span>
+            <span class="skill-pill shimmer-pill">Git</span>
+            <span class="skill-pill shimmer-pill">Docker</span>
+            <span class="skill-pill shimmer-pill">Vite</span>
+            <span class="skill-pill shimmer-pill">Vercel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section reveal-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal-child">
+          <span class="section-label">&#x25CF; Experience</span>
+        </div>
+        <h2 class="section-title reveal-child">Work History</h2>
+        <p class="section-sub reveal-child">Where I've contributed and what I've shipped.</p>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal-child">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Full-Stack Engineer</h3>
+                  <p class="timeline-company">Acme Digital — Remote</p>
+                </div>
+                <span class="timeline-date">2023 – Present</span>
+              </div>
+              <p class="timeline-desc">Led frontend architecture for a SaaS analytics platform serving 50k+ users. Migrated legacy jQuery codebase to React + TypeScript, reducing bundle size by 40%.</p>
+              <div class="timeline-tags">
+                <span>React</span><span>TypeScript</span><span>Node.js</span><span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-child">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">UI/UX Engineer</h3>
+                  <p class="timeline-company">Studio Bravo — New York, NY</p>
+                </div>
+                <span class="timeline-date">2021 – 2023</span>
+              </div>
+              <p class="timeline-desc">Designed and built interactive prototypes and production UIs for clients across fintech and e-commerce. Collaborated directly with product and design leads.</p>
+              <div class="timeline-tags">
+                <span>Figma</span><span>Vue 3</span><span>Tailwind</span><span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-child">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Frontend Developer</h3>
+                  <p class="timeline-company">Freelance</p>
+                </div>
+                <span class="timeline-date">2019 – 2021</span>
+              </div>
+              <p class="timeline-desc">Built websites, dashboards, and web apps for small businesses and startups. Delivered 20+ projects across a wide range of industries.</p>
+              <div class="timeline-tags">
+                <span>JavaScript</span><span>HTML/CSS</span><span>WordPress</span><span>Shopify</span>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section" id="contact">
+    <section class="section reveal-section" id="contact">
       <div class="container contact-container">
-        <div class="section-label">&#x25CF; Contact</div>
-        <h2 class="section-title">Let's Build Something</h2>
-        <p class="section-sub">Got a project in mind? Fill out the form and I'll get back to you within 24 hours.</p>
+        <div class="section-label reveal-child">&#x25CF; Contact</div>
+        <h2 class="section-title reveal-child">Let's Build Something</h2>
+        <p class="section-sub reveal-child">Got a project in mind? Fill out the form and I'll get back to you within 24 hours.</p>
 
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <form class="contact-form reveal-child" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
@@ -222,7 +328,6 @@
             <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
           </div>
           <button type="submit" class="btn btn-full">Send Message &#x2192;</button>
-          <p class="form-success" id="form-success">Message sent! I'll be in touch soon.</p>
         </form>
       </div>
     </section>
@@ -234,22 +339,14 @@
     <div class="container footer-inner">
       <span class="footer-copy">&copy; 2025 Montgomery Jordan. All rights reserved.</span>
       <div class="social-links">
-        <a href="#" aria-label="GitHub" class="social-link">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-          </svg>
+        <a href="https://github.com/montgomeryjordan" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         </a>
-        <a href="#" aria-label="LinkedIn" class="social-link">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
         <a href="#" aria-label="Twitter / X" class="social-link">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-          </svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
       </div>
     </div>
@@ -258,6 +355,11 @@
   <!-- THEME TOGGLE -->
   <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
     <span class="toggle-icon" id="toggleIcon">&#9728;</span>
+  </button>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
   <script src="script.js"></script>
